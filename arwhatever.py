@@ -24,8 +24,7 @@ for file in os.listdir():
     
     if file.endswith(arw_extension):
         with rawpy.imread(file) as raw:
-            rgb = raw.postprocess(gamma=(1,1), no_auto_bright=True, output_bps=8)
-            ### above line originally "rgb = raw.postprocess()"
+            rgb = raw.postprocess()
         imageio.imsave(file.replace(arw_extension, jpg_extension), rgb)
         shutil.move(file, arw_dump_path)
 
