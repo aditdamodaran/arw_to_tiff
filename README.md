@@ -1,13 +1,7 @@
-<br />
-<p align="center">
+![arwhatever Logo](/logo.png)
 
-    <img src="logo.png" alt="Logo" width="120" height="auto">
+# arwhatever
 
+A short Python script that converts Sony ARW files into .jpg format.
 
-  <h3 align="center">arwhatever</h3>
-
-  <p align="center">
-    A short Python script that converts Sony ARW files into .jpg format.
-    <br />
-  <p>A more comprehensive readme is on its way soon.</p>
-</p>
+A more comprehensive readme is on its way soon.
