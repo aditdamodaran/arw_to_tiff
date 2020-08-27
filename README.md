@@ -1,4 +1,4 @@
-![arwhatever Logo](/logo.png)
+<img src="logo.png" alt="Logo" width="300"/>
 
 # arwhatever
 
