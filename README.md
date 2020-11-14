@@ -1,4 +1,4 @@
-<img src="logo.png" alt="Logo" width="300"/>
+<img src="logo.png" alt="Logo" width="100%"/>
 
 # arwhatever
 
