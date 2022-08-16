@@ -1,8 +1,6 @@
-<img src="logo.png" alt="Logo" width="100%"/>
+# ARW to TIFF
 
-# arwhatever
-
-A short Python script that converts Sony .ARW files into .jpg format.
+A short Python script that converts Sony .ARW files into .tiff format. Forked from horatioduke's [arwhatever](https://github.com/horatioduke/arwhatever).
 
 ## Dependencies
 
@@ -13,15 +11,10 @@ A short Python script that converts Sony .ARW files into .jpg format.
 
 ## How To Use
 
-1. Install the dependencies above using Shell in Linux, Terminal in Mac, or [Git Bash](https://gitforwindows.org/) in Windows.
-2. Plonk all of the .ARW files you wish to convert into an empty/newly-created directory.
-3. Drag "arwhatever.py" into the same directory.
-4. Run the script.
-5. Your .ARW files have now been converted into .jpg file formats. Each image type has been separated into newly-created "dump" directories.
-6. Have a cup of tea.
+1. From within the main repo, run `virtualenv venv` to create a virtual environment.
+2. From within the main repo, run `source venv/bin/activate` to activate it.
+3. From within the main repo, run `pip3 install -r requirements.txt` to install dependencies
+4. From within the main repo, run `python3 main.py` to create the I/O folders, if they don't already exist
+5. Drop desired **.ARW** images for conversion in the **/input** folder.
+6. From within the main repo, run `python3 main.py` again to convert files in the **/input** folder. You can find the converted files in the **/output** folder when the script completes.
 
-## Roadmap
-
-Next version will include:
-- GUI
-- Option to export to common image types such as .png or .tiff
