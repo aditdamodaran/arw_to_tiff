@@ -3,7 +3,6 @@ import rawpy
 import imageio
 import shutil
 
-jpg_extension = ".jpg"
 tiff_extension = ".tiff"
 arw_extension = ".ARW"
 
@@ -44,9 +43,11 @@ if input_output_created:
         if file.endswith(arw_extension):
           with rawpy.imread(filepath) as raw:
             print('Processing:', file)
-            rgb = raw.postprocess()
-          imageio.imsave(filepath.replace(arw_extension, jpg_extension), rgb)
-          shutil.move(filepath.replace(arw_extension, jpg_extension), output_path)
+            rgb = raw.postprocess(
+              use_camera_wb=True,
+            )
+          imageio.imsave(filepath.replace(arw_extension, tiff_extension), rgb)
+          shutil.move(filepath.replace(arw_extension, tiff_extension), output_path)
       
     print("\n")
     print("Done!")
